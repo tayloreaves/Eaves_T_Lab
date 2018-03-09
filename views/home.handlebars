@@ -1,0 +1,23 @@
+ <!-- show the welcome message here (pass it via the route data object) -->
+
+<!-- use a Handlebars each loop to pull in the data -> you need a video ID and a video thumbnail -->
+
+<!-- create a handlebars "each" loop that creates an li inside the UL below. inside the li, there should be an a (anchor) tag with an href of /video/  Append the videoSource to that url with Handlebars. Put an image inside the a tag; its source should be the video thumbnail (use Handlebars) -->
+
+<h4 class="welcome-message">{{ title }}</h4>
+
+<ul>
+  {{#each templates}}
+<li>{{ name }} is {{ description }}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  <a href="../video.handlebars"><img src="../images/avengers.jpg" alt="avengers" height="300"></a>
+  <a href="../video.handlebars"><img src="../images/forceawakens.jpg" alt="forceawakens" height="300"></a>
+  <a href="../video.handlebars"><img src="../images/strangerthings.jpg" alt="strangerthings" height="300"></a>
+</ul>
+
+<p class="instructions">
+  <i>Click on a movie to preview the commercial</i>
+</p>
